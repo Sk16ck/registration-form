@@ -8,6 +8,17 @@ body {
 
 @media only screen and (min-width: 60em) {
 
+}
 
+button {
+  color: #fff;
+  background-color: #000;
+}
 
+button:hover {
+  background-color: #f2f2f2;
+}
+
+wrapper {
+  background-color: #fFFf00;
 }

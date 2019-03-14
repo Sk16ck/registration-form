@@ -10,45 +10,58 @@
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 </head>
-<body class="pad-l-1 pad-r-1">
-  <h1>Want to go to Mars?</h1>
-  <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
-
+<body class="gutter">
+  <!-- Might need div for wrapper & max-length & center button-->
+  <wrapper>
+<div>
+  <h1 class="pad-t-2">Want to go to Mars?</h1>
+  <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
+</div>
   <!-- Contains 5 Labels -->
-  <form class="pad-t" action="https://formspree.io/you@email.com" method="POST">
-    <fieldset>
-      <legend class="push italic">Personal details</legend>
-      <!-- Name -->
-      <div class="pad-b">
-        <label for="name">Name</label>
-        <input id="name" name="name" required>
-      </div>
-      <!-- Age -->
-      <div class="pad-b">
-        <label for="age">Age</label>
-        <input id="age" name="age">
-      </div>
-      <!-- Email -->
-      <div class="pad-b">
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="me@me.com" name="email" required>
-      </div>
-      <!-- Physical Fitness -->
-      <div class="pad-b">
-        <label for="fitness">Physical fitness</label>
-        <select id="fitness" name="fitness">
-          <option>Super-human</option>
-          <option>Fit as a fiddle</option>
-          <option>Not terribly strong</option>
-          <option>A little couch-potato-y</option>
-        </select>
-      </div>
-      <!-- Address -->
-      <div>
-        <label for="address">Address</label>
-        <textarea id="address" name="address"></textarea>
-      </div>
-    </fieldset>
+  <div>
+    <!-- Wrapper on the form -->
+    <form class="pad-t" action="https://formspree.io/you@email.com" method="POST">
+      <fieldset>
+        <legend class="push push-r italic">Personal details</legend>
+
+        <div class="grid">
+          <!-- Name -->
+          <div class=" unit gutter l-1-2 m-1 xs-1 s-1 pad-b">
+            <label for="name">Name</label>
+            <input id="name" name="name" required>
+          </div>
+
+          <!-- Age -->
+          <div class="unit gutter l-1-2 m-1 xs-1 s-1 pad-b">
+            <label for="age">Age</label>
+            <input id="age" name="age">
+          </div>
+
+          <!-- Email -->
+          <div class="unit gutter l-1-2 m-1 xs-1 s-1 pad-b">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="me@me.com" name="email" required>
+          </div>
+
+          <!-- Physical Fitness -->
+          <div class="unit gutter l-1-2 m-1 xs-1 s-1 pad-b">
+            <label for="fitness">Physical fitness</label>
+            <select id="fitness" name="fitness">
+              <option>Super-human</option>
+              <option>Fit as a fiddle</option>
+              <option>Not terribly strong</option>
+              <option>A little couch-potato-y</option>
+            </select>
+          </div>
+
+          <!-- Address -->
+          <div class="unit xs-1 s-1 m-1 l-1">
+            <label for="address">Address</label>
+            <textarea id="address" name="address"></textarea>
+          </div>
+        </div>
+      </fieldset>
+    </form>
 
     <!-- Contains 1 Label w a Text area & Button-->
     <fieldset>
@@ -57,13 +70,14 @@
         <label for="statement">Why do you want to go to Mars?</label>
         <textarea id="statement" name="statement"></textarea>
       </div>
+
+      <!-- Button -->
       <div>
         <button class="btn" type="submit">Register for the trip!</button>
         <input type="hidden" name="_subject" value="Request to join the mission">
       </div>
     </fieldset>
-
-  </form>
-
+  </div>
+</wrapper>
 </body>
 </html>
