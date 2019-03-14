@@ -2,12 +2,12 @@ html {
   font-family: "Open Sans", sans-serif;
 }
 
-body {
-  padding: 0;
+h1 {
+  border-bottom-style: solid;
 }
 
-@media only screen and (min-width: 60em) {
-
+body {
+  padding: 0;
 }
 
 button {
@@ -19,6 +19,14 @@ button:hover {
   background-color: #f2f2f2;
 }
 
-wrapper {
-  background-color: #fFFf00;
+@media only screen and (min-width: 60em) {
+
+  .wrapper {
+    max-width: 960px;
+  }
+
+}
+
+.wrapper {
+  text-align: center;
 }
